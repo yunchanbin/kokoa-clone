@@ -4,23 +4,29 @@
     <title>Home - My first website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
-      h1 {
-        font-size: 50px;
-        color:yellowgreen;
+      html {
+        background-color: tomato;
+      }
+      body {
+        background-color: thistle;
+        margin: 20px 5px 12px 99px;
+        /* 시계방향 순으로 top right bottom left */
+      }
+      div {
+        /* collapsing margins */
+        margin: 20px 15px;
+        /* inline은 높이와 너비가 있으면 안보인다. 가질 수 없다. */
+        height: 150px;
+        width: 150px;
+        background-color: white;
+      }
+      span{
+        display: block;
+        background-color: turquoise;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>
-        Hello!
-      </h1>
-    </header>
-    <main>
-      <address>123 Road Altavista</address>
-    </main>
-    <footer>
-      &copy; 2023 N.C
-    </footer>
+   <div></div>
   </body>
 </html>
