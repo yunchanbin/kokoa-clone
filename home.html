@@ -4,60 +4,32 @@
     <title>Home - My first website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
-      *{
-        border: 2px dashed black;
-      }
-      html {
-        background-color: tomato;
-      }
       body {
         margin: 20px;
-        padding: 20px;
-        background-color: thistle;
-        /* margin: 20px 5px 12px 99px; */
-        /* 시계방향 순으로 top right bottom left */
       }
-      div {
-        /* collapsing margins */
-        /* margin: 20px 15px; */
-        /* inline은 높이와 너비가 있으면 안보인다. 가질 수 없다. */
-        padding: 20px;
+      .btn{
+        padding: 5px 10px;
+        border-radius: 5px;
+        /* margin: 30px; */
+        /* padding은 사방으로 다 가질 수 있는데, margin은 위아래로 가질 수 없다. */
       }
-      #first{
-        background-color: whitesmoke;
-        width: 150px;
-        height: 150px;
-      }
-      #second{
+      
+      .teal{
         background-color: teal;
-        width: 100px;
-        height: 100px;
       }
-      #third{
-        background-color: wheat;
-        width: 50px;
-        height: 50px;
+      .tomato {
+        background-color: tomato;
       }
-      #fourth{
-        background-color: blanchedalmond;
-        width: 10px;
-        height: 10px;
-      }
-      span{
-        border-style: dotted;
-        height: 30000px;
-      }
+      
     </style>
   </head>
   <body>
-   <div id="first">
-    <div id="second">
-      <div id="third">
-        <div id="fourth">
-          <span>Hello</span>
-        </div>
-      </div>
-    </div>
-   </div>
+   <span class="btn teal">hello</span>
+   <span class="btn tomato">hello</span>
+   <span class="btn teal">hello</span>
+   <span class="btn tomato">hello</span>
+   <span class="btn teal">hello</span>
+   <span class="btn tomato">hello</span>
+   <span class="btn teal">hello</span>
   </body>
 </html>
