@@ -10,24 +10,24 @@
 
       }
       div{
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
         background-color: wheat;
         position: relative;
       }
-      .green{
+      div:first-child{
+        background-color: tomato;
+      }
+      div:last-child{
         background-color: teal;
-        position: absolute;
-        /* absolute는 가장 가까운 relative 부모를 기준으로 이동 */
-        right: 0;
-        height: 100px;
-        width: 100px;
       }
     </style>
   </head>
   <body>
-    <div>
-      <div class="green"></div>
-    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </body>
 </html>
