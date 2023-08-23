@@ -7,28 +7,30 @@
       body {
         height: 1000vh;
         margin: 50px;
-
       }
       span{
-        background-color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      span:nth-child(3n+1){
-        background-color: teal;
+      p span{
+        color:white
+      }
+      p ~ span{
+        text-decoration: underline;
       }
 
     </style>
   </head>
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <p>
+        We can say that the time the industry relied on cheap labor has passed.
+        <span>inside</span>
+      </p>
+      <address>Main Street</address>
+      <span>hello</span>
+      <span>hello</span>
+    </div>
   </body>
 </html>
