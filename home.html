@@ -8,35 +8,39 @@
         height: 1000vh;
         margin: 50px;
       }
-      span{
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+      input:focus{
+        background-color: tomato;
       }
-      p span{
-        color:white
+      a:visited{
+        color: tomato;
       }
-      p ~ span{
-        text-decoration: underline;
+      a:hover{
+        color: teal;
       }
-      input{
-        border:  1px solid wheat;
+      a:focus{
+        color: turquoise;
       }
-      input:required{
-        border-color: tomato;
+      form{
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
       }
-      /* attribute selector */
-      input[placeholder~="name"]{
-        background-color: pink;
+      /* focus-within은 focused인 자식을 가진 부모 엘리먼트에 적용된다. */
+      form:hover input:focus{
+        background-color: sienna;
       }
     </style>
   </head>
   <body>
     <div>
+      <input type="text" />
+      <input type="text" />
+      <a href="https://apple.com">Go to apple</a>
       <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input required type="password" placeholder="password" />
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
       </form>
     </div>
   </body>
