@@ -5,34 +5,27 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       body {
-        height: 100vh;
-        /* vh는 viewport(screen) height를 뜻한다. 100vh라 하면
-        화면 전체에 꽉 차는 걸 의미함. */
+        height: 1000vh;
         margin: 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap-reverse;
+
       }
       div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 28px;
-        color: azure;
         width: 300px;
         height: 300px;
-        background-color: teal;
+        color: white;
       }
-      #second{
+      #green{
+        background-color: teal;
+        position: fixed;
+        opacity: 0.2;
+      }
+      #different{
         background-color: wheat;
       }
     </style>
   </head>
   <body>
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
+    <div id="green"></div>
+    <div id="different"></div>
   </body>
 </html>
