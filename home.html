@@ -4,19 +4,30 @@
     <title>Home - My first website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
+      body{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+
+      }
       @keyframes superSexyCoinFlip{
-        from{
+        0%{
           transform: rotateZ(0deg);
         }
-        to{
+        50%{
+          transform: rotateZ(180deg);
+          border-color: tomato;
+        }
+        100%{
           transform: rotateZ(360deg);
         }
       }
 
       img{
-        border: 5px solid black;
+        border: 5px solid teal;
         border-radius: 50%;
-        animation: superSexyCoinFlip 1s ease infinite;
+        animation: superSexyCoinFlip 2s ease infinite;
       }
       img:hover{
         
@@ -25,6 +36,5 @@
   </head>
   <body>
     <img src="img/logo.jpeg" alt="">
-    <span>ahahahahahahahah</span>
   </body>
 </html>
