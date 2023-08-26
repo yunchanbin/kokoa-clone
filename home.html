@@ -9,32 +9,31 @@
         height: 100vh;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+      }
+      div{
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (min-width: 601px) and (max-width:1200px) and (orientation: portrait){
+        div{
+          background-color: wheat;
+        }
+      }
+      span{
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span{
+          display: none;
+        }
+      }
 
-      }
-      @keyframes superSexyCoinFlip{
-        0%{
-          transform: rotateZ(0deg);
-        }
-        50%{
-          transform: rotateZ(180deg);
-          border-color: tomato;
-        }
-        100%{
-          transform: rotateZ(360deg);
-        }
-      }
-
-      img{
-        border: 5px solid teal;
-        border-radius: 50%;
-        animation: superSexyCoinFlip 2s ease infinite;
-      }
-      img:hover{
-        
-      }
     </style>
   </head>
   <body>
-    <img src="img/logo.jpeg" alt="">
+    <div></div>
+    <span>Please flip your phone :(</span>
   </body>
 </html>
