@@ -4,52 +4,23 @@
     <title>Home - My first website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
-      body {
-        height: 1000vh;
-        margin: 50px;
-      }
-      input:focus{
+      a {
+        color: wheat;
         background-color: tomato;
-      }
-      a:visited{
-        color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        transition: all 1s cubic-bezier(0.600, -0.280, 0.735, 0.045);
       }
       a:hover{
-        color: teal;
-      }
-      a:focus{
-        color: turquoise;
-      }
-      form{
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-      }
-      /* focus-within은 focused인 자식을 가진 부모 엘리먼트에 적용된다. */
-      form:hover input:focus{
-        background-color: sienna;
-      }
-      p::first-letter{
-        font-size: 30px;
-        color: white;
-        background-color: yellowgreen;
+        border-radius: 20px;
+        color: tomato;
+        background-color: wheat;
       }
     </style>
   </head>
   <body>
-    <div>
-      <input type="text" />
-      <input type="text" />
-      <a href="https://apple.com">Go to apple</a>
-      <form>
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
-        <input type="text" name="" id="">
-      </form>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus libero aliquam veritatis voluptatibus quisquam tempora ullam, eos dolor voluptate rerum autem quam voluptatum delectus vitae laudantium vero consectetur eum.
-      </p>
-    </div>
+    <a href="#">Go Home</a>
   </body>
 </html>
